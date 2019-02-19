@@ -1,14 +1,14 @@
+MOTOR_A = 0
+MOTOR_B = 1
+HIGH = 1
+LOW = 0
+
+
 class Motor():
     def __init__(self, board, in1, in2, pwn):
         self.in1 = board.get_pin('d:{}:o'.format(in1))
         self.in2 = board.get_pin('d:{}:o'.format(in2))
         self.pwn = board.get_pin('d:{}:p'.format(pwn))
-
-
-MOTOR_A = 0
-MOTOR_B = 1
-HIGH = 1
-LOW = 0
 
 
 class L298N():
