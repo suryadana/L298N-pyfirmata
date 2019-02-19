@@ -1,5 +1,5 @@
 from pyfirmata import Arduino
-from lib.L298N import L298N
+from l289n import L298N
 
 
 def main():
